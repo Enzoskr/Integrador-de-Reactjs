@@ -1,6 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-import { formatPrice, formatDate } from '../../utils';
-import OrderStatus from '../UI/StateOrder/StateOrder';
+import { useNavigate } from "react-router-dom";
+import { formatPrice, formatDate } from "../../utils";
+import OrderStatus from "../UI/StateOrder/StateOrder";
 
 import {
   IdStyled,
@@ -8,10 +8,9 @@ import {
   PriceStyled,
   TextContainerStyled,
   TitleStyled,
-} from './CardsOrdenesStyles';
+} from "./CardsOrdenesStyles";
 
-const CardMisOrdenes = ({createdAt, status, total, _id}) => {
-
+const CardMisOrdenes = ({ createdAt, status, total, _id }) => {
   const navigate = useNavigate();
 
   return (

@@ -1,28 +1,25 @@
-import React from 'react';
-import { formatPrice } from '../../utils';
+import React from "react";
+import { formatPrice } from "../../utils";
 
 import {
   ProductLeftStyled,
   ProductPriceStyled,
   ProductStyled,
   PriceContainerStyled,
-} from './ResumenCardStyles';
+} from "./ResumenCardStyles";
 
-const CardResumen = ({name ,desc, quantity, img, price}) => {
+const CardResumen = ({ name, desc, quantity, img, price }) => {
   return (
     <ProductStyled>
       <ProductLeftStyled>
-        <img
-          src={img}
-          alt={name}
-        />
+        <img src={img} alt={name} />
         <div>
           <h3>{name}</h3>
           <p>{desc}</p>
         </div>
       </ProductLeftStyled>
       <PriceContainerStyled>
-        <p>{quantity}</p>
+        <p>{quantity}U</p>
         <ProductPriceStyled>{formatPrice(price * quantity)}</ProductPriceStyled>
       </PriceContainerStyled>
     </ProductStyled>
