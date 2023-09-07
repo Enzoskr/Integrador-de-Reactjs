@@ -13,6 +13,7 @@ export const HeroContainer = styled.div`
   background-size: cover;
   background-attachment: local;
   @media (max-width: 768px) {
+    height: 600px;
   }
   img {
     width: 100%;

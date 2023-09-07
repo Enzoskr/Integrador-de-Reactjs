@@ -21,7 +21,7 @@ export const ProductsCard = styled.div`
   background: var(--color-cards);
   padding: 20px;
   width: 300px;
-  height: 400px;
+  height: 370px;
 
   border-radius: 12px;
   display: flex;
@@ -34,8 +34,8 @@ export const ProductsCard = styled.div`
   transition: all 0.3s ease-in-out;
 
   img {
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 150px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -50,11 +50,21 @@ export const ProductsCard = styled.div`
   @media (max-width: 768px) {
     width: 250px;
     text-align: center;
+    padding: 15px;
+    /* height: 300px; */
+    gap: 0px;
+
+    img {
+      height: 350px;
+      width: 170px;
+    }
   }
 `;
 export const ContainerPrice = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 `;
 export const CardPrice = styled.div`
   font-weight: 800;
@@ -64,9 +74,20 @@ export const CardPrice = styled.div`
 
 export const ContainerInfo = styled.div`
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   align-items: flex-start;
   flex-direction: column;
   padding: 0 10px;
-  height: 100%;
+  height: 50%;
+  h3 {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 0%;
+    justify-content: unset;
+
+    h3 {
+      font-size: 14px;
+    }
+  }
 `;

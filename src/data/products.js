@@ -195,7 +195,7 @@ export const products = [
     id: 25,
     title: "jacket Lacoste x Golf le Fleur",
     img: "https://res.cloudinary.com/overkillshop/t_p-610x610/products/35250/bh0465-00-6b3_1.jpg",
-    price: "",
+    price: "120000",
     desc: "Lacoste x Golf le Fleur",
     category: "Camperas",
   },
