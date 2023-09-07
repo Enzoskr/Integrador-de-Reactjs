@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProductStyled = styled.div`
   display: flex;
@@ -8,6 +8,16 @@ export const ProductStyled = styled.div`
   padding: 1.5rem 1rem;
   width: 90%;
   max-width: 620px;
+  img {
+    width: 100px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    img {
+      width: 80px;
+    }
+    flex-direction: column;
+  }
 `;
 
 export const ProductLeftStyled = styled.div`

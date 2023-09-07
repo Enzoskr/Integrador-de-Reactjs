@@ -1,7 +1,7 @@
-import React from 'react'
-import { formatPrice } from '../../utils/index'
+import React from "react";
+import { formatPrice } from "../../utils/index";
 
-import  Button  from '../UI/Button/Button'
+import Button from "../UI/Button/Button";
 
 import {
   Card,
@@ -10,29 +10,28 @@ import {
   CardTitle,
   InfoCard,
   CardPrice,
-} from './CardsRecommendedStyled'
-import { AddToCart } from '../../redux/cart/cartSlice'
-import { useDispatch } from 'react-redux'
+} from "./CardsRecommendedStyled";
+import { AddToCart } from "../../redux/cart/cartSlice";
+import { useDispatch } from "react-redux";
 
-const CardRecommended = ({id, name, img, price, desc}) => {
-
-  const dispatch = useDispatch(AddToCart)
-
+const CardRecommended = ({ id, title, img, price, desc }) => {
+  const dispatch = useDispatch(AddToCart);
 
   return (
     <Card>
-      <CardImg
-        src={img}
-        alt={name}
-      />
+      <CardImg src={img} alt={title} />
       <CardText>
-        <CardTitle>{name}</CardTitle>
+        <CardTitle>{title}</CardTitle>
         <InfoCard>{desc}</InfoCard>
         <CardPrice>{formatPrice(price)}</CardPrice>
       </CardText>
-      <Button onClick={() => dispatch(AddToCart({id, img, name, desc, price}))}>Add</Button>
+      <Button
+        onClick={() => dispatch(AddToCart({ id, img, title, desc, price }))}
+      >
+        Add
+      </Button>
     </Card>
-  )
-}
+  );
+};
 
 export default CardRecommended;

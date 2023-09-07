@@ -1,12 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MisOrdenesContainerStyled = styled.div`
-  padding: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
@@ -20,6 +19,9 @@ export const PedidoContainerStyled = styled.div`
   justify-content: space-between;
   position: relative;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 240px;
+  }
 `;
 
 export const TextContainerStyled = styled.div`

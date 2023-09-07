@@ -44,7 +44,7 @@ const ModalCart = () => {
       {!hiddenCart && (
         <ModalOverlayStyled
           onClick={() => dispatch(toggleCartHidden())}
-          isHidden={hiddenCart}
+          hidden={hiddenCart}
         />
       )}
       <AnimatePresence>

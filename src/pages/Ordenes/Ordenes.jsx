@@ -11,7 +11,7 @@ import {
   MisOrdenesTitleStyled,
 } from "./OrdenesStyles";
 import { getOrders } from "../../axios/axios-orders";
-import { clearError, fetchOrdersFail } from "../../redux/Orders/orderSlice";
+import { clearError, fetchOrdersFail } from "../../redux/Orders/ordersSlice";
 
 const MisOrdenes = () => {
   const navigate = useNavigate();

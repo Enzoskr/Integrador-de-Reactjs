@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ContainerStyled = styled(motion.div)`
   position: fixed;
@@ -9,27 +9,26 @@ export const ContainerStyled = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 
   width: 450px;
   height: calc(100vh - 4rem);
+  gap: 30px;
 
   padding: 2rem;
   background-color: #14213d;
-  
+
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    padding: 60px;
-    right: none;
-      background-color: #14213d;
-
+    width: 70%;
+    height: calc(90vh - 4rem);
   }
 `;
 
 export const CloseButtonContainerStyled = styled.div`
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  /* justify-content: flex-end; */
+  height: 32px;
 `;
 
 export const CloseButtonStyled = styled(motion.button)`
@@ -55,7 +54,7 @@ export const TitleStyled = styled.div`
 
   & h1 {
     margin-top: 0;
-    color:#e0e1dd;
+    color: #e0e1dd;
   }
 `;
 
@@ -109,6 +108,9 @@ export const ProductContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -134,7 +136,6 @@ export const TextStyled = styled.p`
 `;
 
 export const PriceStyled = styled.span`
-
   font-weight: 800;
   font-size: 1.2rem;
   background: var(--btn-gradient);
@@ -145,7 +146,7 @@ export const PriceStyled = styled.span`
 export const PriceContainerStyled = styled.div`
   z-index: 1000;
   margin-top: 60px;
-  
+
   & p {
     text-align: center;
     margin-bottom: 0;
@@ -153,7 +154,7 @@ export const PriceContainerStyled = styled.div`
 `;
 
 export const SubtotalStyled = styled.div`
-  color:var(--Gris);
+  color: var(--Gris);
   display: flex;
   justify-content: space-between;
   align-items: center;

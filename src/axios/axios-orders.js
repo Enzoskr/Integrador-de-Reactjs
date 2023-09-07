@@ -1,11 +1,11 @@
 import axios from "axios";
-import { BASE_URL } from "../utils";
 import {
+  createOrderFail,
+  fetchOrdersFail,
   fetchOrdersStart,
   fetchOrdersSuccess,
-  fetchOrdersFail,
-  createOrderFail,
-} from "../redux/Orders/orderSlice";
+} from "../redux/Orders/ordersSlice";
+import { BASE_URL } from "../utils";
 
 export const getOrders = async (dispatch, currentUser) => {
   dispatch(fetchOrdersStart());

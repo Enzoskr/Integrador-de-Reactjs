@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { formatPrice } from '../../utils';
+import React, { useEffect, useState } from "react";
+import { formatPrice } from "../../utils";
 
-import CardResumen from '../../components/Resumen/ResumenCard';
-import Link from '../../components/UI/Link/Link';
+import CardResumen from "../../components/Resumen/ResumenCard";
+import Link from "../../components/UI/Link/Link";
 
 import {
   CostoEnvioStyled,
@@ -12,43 +12,40 @@ import {
   ResumenContainerInfoStyled,
   ResumenContainerStyled,
   ResumenTitleStyled,
-} from './ResumenStyles';
-import { useDispatch, useSelector } from 'react-redux';
-import { getOrders } from '../../axios/axios-orders';
-import { useParams } from 'react-router-dom';
+} from "./ResumenStyles";
+import { useDispatch, useSelector } from "react-redux";
+import { getOrders } from "../../axios/axios-orders";
+import { useParams } from "react-router-dom";
 
 const Resumen = () => {
-
-  const dispatch = useDispatch()
-  const {orderId} = useParams();
+  const dispatch = useDispatch();
+  const { orderId } = useParams();
 
   const [visitedOrder, setVisitedOrder] = useState(null);
 
-  const orders = useSelector(state => state.orders.orders)
-  const {currentUser} = useSelector(state => state.user)
+  const orders = useSelector((state) => state.orders.orders);
+  const { currentUser } = useSelector((state) => state.user);
 
   useEffect(() => {
-    if(!orders) {
-      getOrders(dispatch, currentUser)
+    if (!orders) {
+      getOrders(dispatch, currentUser);
     }
-    setVisitedOrder(orders?.find(order => order._id === orderId))
-  }, [orderId, currentUser, orders, dispatch])
+    setVisitedOrder(orders?.find((order) => order._id === orderId));
+  }, [orderId, currentUser, orders, dispatch]);
 
   return (
     <ResumenContainerStyled>
       <ResumenTitleStyled>
-        <h1>Id de compra: #{visitedOrder?._id.slice(0,7)}</h1>
-        <Link borderRadius='10' to='/Ordenes'></Link>
+        <h1>Id de compra: #{visitedOrder?._id.slice(0, 7)}</h1>
+        <Link borderRadius="12" to="/Ordenes"></Link>
       </ResumenTitleStyled>
       <h2>Productos:</h2>
       <ProductsContainerStyled>
-        {
-          visitedOrder?.items.map((item) => {
-            return <CardResumen {...item} key={item._id} />
-          })
-        }
+        {visitedOrder?.items.map((item) => {
+          return <CardResumen {...item} key={item._id} />;
+        })}
       </ProductsContainerStyled>
-      
+
       <ResumenContainerInfoStyled>
         <h3>Costos:</h3>
         <CostoProductoStyled>

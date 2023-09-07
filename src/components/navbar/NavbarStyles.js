@@ -92,6 +92,9 @@ export const CartNavStyled = styled.div`
     background-color: red;
     color: white;
     font-size: 12px;
+    @media (max-width: 768px) {
+      position: absolute;
+    }
   }
 `;
 
