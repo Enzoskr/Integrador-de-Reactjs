@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 :root{
     --primary-color: #ffffff;
@@ -47,4 +47,4 @@ main a{
     color: var(--text-color-black);
     text-decoration: none;
 }
-`
+`;

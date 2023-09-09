@@ -20,8 +20,9 @@ export const ContainerStyled = styled(motion.div)`
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    width: 70%;
-    height: calc(90vh - 4rem);
+    height: calc(90vh - 0.5rem);
+    width: 80%;
+    padding: none;
   }
 `;
 
@@ -56,6 +57,9 @@ export const TitleStyled = styled.div`
     margin-top: 0;
     color: #e0e1dd;
   }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const MainContainerStyled = styled.div`
@@ -72,9 +76,7 @@ export const ProductsWrapperStyled = styled.div`
   height: 400px;
   margin: 0 auto;
   padding: 1rem;
-
   padding-left: 0;
-
   overflow: scroll;
 
   &::-webkit-scrollbar {
@@ -87,6 +89,11 @@ export const ProductsWrapperStyled = styled.div`
 
   @media (max-height: 800px) {
     height: 235px;
+    /* gap: 10px; */
+  }
+  @media (max-width: 768px) {
+    gap: 10px;
+    height: 370px;
   }
 `;
 
@@ -110,6 +117,14 @@ export const ProductContainerStyled = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0px;
+    padding: 1rem 18px;
+    img {
+      width: 60px;
+      height: 60px;
+    }
   }
 `;
 
@@ -120,7 +135,10 @@ export const TextContainerStyled = styled.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 190px;
+  /* width: 190px; */
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const CardTitleStyled = styled.h3`
@@ -141,6 +159,9 @@ export const PriceStyled = styled.span`
   background: var(--btn-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
 `;
 
 export const PriceContainerStyled = styled.div`
@@ -171,4 +192,8 @@ export const ButtonContainerStyled = styled(SubtotalStyled)`
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    /* width: 70%; */
+    /* height: 10px; */
+  }
 `;
