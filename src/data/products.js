@@ -113,7 +113,7 @@ export const products = [
   },
   {
     id: 15,
-    title: "Panatalon nike x hello kitty",
+    title: "Pantalon nike x hello kitty",
     img: "https://www.nakedcph.com/images/56272/nike-qs-tz-nike-x-hello-kitty-nrg-fleece-pants-university-blue-dr5517-412-1.jpg",
     price: 32000,
     desc: "Nike",

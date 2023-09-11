@@ -3,6 +3,10 @@ import { styled } from "styled-components";
 export const ProductosContainerStyled = styled.div`
   width: 50%;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 12px;
+  }
 `;
 
 export const ProductsTitleStyled = styled.h2``;

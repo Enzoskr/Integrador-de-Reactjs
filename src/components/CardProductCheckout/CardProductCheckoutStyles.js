@@ -4,10 +4,8 @@ export const CardContainerStyles = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
-
-  width: 85%;
-
+  gap: 4px;
+  width: 90%;
   background-color: var(--Gris);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -21,6 +19,14 @@ export const CardContainerStyles = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+  @media (max-width: 768px) {
+    padding: 5px;
+    border: 1px solid var(--lines);
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
 `;
 
 export const CardInfoStyled = styled.div`
@@ -29,7 +35,7 @@ export const CardInfoStyled = styled.div`
   overflow: hidden;
   flex-direction: column;
   gap: 2px;
-  width: 450px;
+  /* width: 450px; */
 `;
 
 export const ProductNameStyles = styled.h3`
