@@ -23,6 +23,7 @@ export const CardsContainer = styled.div`
   }
   @media (max-width: 768px) {
     padding: 6px;
+
     h3 {
       font-size: 14px;
     }
@@ -40,12 +41,14 @@ export const Card = styled.div`
   transition: all 0.3s ease-in-out;
   width: 420px;
   height: 100px;
+  flex: 0 0 auto;
 
   @media (max-width: 768px) {
     width: 300px;
     font-size: 10px;
     height: 100px;
     padding: 0px 6px;
+    gap: 12px;
   }
 `;
 
@@ -67,6 +70,9 @@ export const CardTitle = styled.h3`
   :hover {
     white-space: normal;
     text-overflow: initial;
+  }
+  @media (max-width: 425px) {
+    letter-spacing: normal;
   }
 `;
 

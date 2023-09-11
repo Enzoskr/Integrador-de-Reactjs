@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ButtonSubmitStyled = styled(motion.button)`
   padding: 8px 30px;
@@ -12,8 +12,5 @@ export const ButtonSubmitStyled = styled(motion.button)`
   margin-top: 16px;
   &:disabled {
     cursor: not-allowed;
-
   }
-
-  
 `;

@@ -25,7 +25,7 @@ const ProductCard = ({ id, img, title, desc, price }) => {
         <Button
           onClick={() => dispatch(AddToCart({ id, img, title, desc, price }))}
         >
-          Add
+          Añadir
         </Button>
       </ContainerPrice>
     </ProductsCard>

@@ -25,4 +25,8 @@ export const SubmitBtn = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    padding-left: 10px;
+  }
 `;

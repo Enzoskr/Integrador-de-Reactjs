@@ -28,7 +28,7 @@ const CardRecommended = ({ id, title, img, price, desc }) => {
       <Button
         onClick={() => dispatch(AddToCart({ id, img, title, desc, price }))}
       >
-        Add
+        Añadir
       </Button>
     </Card>
   );

@@ -3,19 +3,20 @@ import styled from "styled-components";
 
 export const ResumenContainerStyled = styled.div`
   padding: 60px 0;
+  max-width: 1200px;
   @media (max-width: 768px) {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
   }
 `;
 
 export const ResumenTitleStyled = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {
     align-items: center;
-    font-size: 10px;
+    font-size: 8px;
   }
 `;
 
@@ -48,9 +49,12 @@ export const ProductsContainerStyled = styled.div`
 `;
 
 export const ResumenContainerInfoStyled = styled.div`
-  width: 500px;
   display: flex;
+  width: 80%;
+  margin: 0 auto;
   flex-direction: column;
+
+  justify-content: space-around;
   flex-wrap: wrap;
   @media (max-width: 768px) {
     width: 100%;

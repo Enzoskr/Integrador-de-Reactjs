@@ -17,7 +17,7 @@ export const CardWrapperStyled = styled.div`
   gap: 25px;
 
   width: 80%;
-  height: 440px;
+  height: 380px;
   margin: 0 auto;
 
   overflow: scroll;

@@ -1,6 +1,6 @@
-import React from 'react'
-import { formatPrice } from '../../../utils';
-import CardProductCheckout from '../../CardProductCheckout/CardProductCheckout';
+import React from "react";
+import { formatPrice } from "../../../utils";
+import CardProductCheckout from "../../CardProductCheckout/CardProductCheckout";
 
 import {
   ProductosContainerStyled,
@@ -10,46 +10,37 @@ import {
   TotalStyled,
   ShippingCostStyled,
   PriceSpanStyled,
+} from "./ProductsCheckoutStyles";
 
-} from './ProductsCheckoutStyles';
-
-
-const ProductsCheckout = ({cartItems, shippingCost, price}) => {
+const ProductsCheckout = ({ cartItems, shippingCost, price }) => {
   return (
     <ProductosContainerStyled>
       <ProductsTitleStyled>Tus Productos</ProductsTitleStyled>
-        <CardWrapperStyled>
-          {
-          cartItems.length ? (
-            cartItems.map((item) => {
-              return <CardProductCheckout {...item} key={item.id} />
-            })
-        
-        )
-        : (
+      <CardWrapperStyled>
+        {cartItems.length ? (
+          cartItems.map((item) => {
+            return <CardProductCheckout {...item} key={item.id} />;
+          })
+        ) : (
           <p>No hay productos</p>
-        )
-        }
-        </CardWrapperStyled>
-        <PriceContainerStyled>
-          <TotalStyled>
+        )}
+      </CardWrapperStyled>
+      <PriceContainerStyled>
+        <TotalStyled>
           <p>Total</p>
           <span>{formatPrice(price)}</span>
-          </TotalStyled>
-          <ShippingCostStyled>
+        </TotalStyled>
+        <ShippingCostStyled>
           <p>Costo de envio</p>
           <span>{formatPrice(shippingCost)}</span>
-          </ShippingCostStyled>
-          <TotalStyled>
+        </ShippingCostStyled>
+        <TotalStyled>
           <p>Total a pagar</p>
           <PriceSpanStyled>{formatPrice(price + shippingCost)}</PriceSpanStyled>
-          </TotalStyled>
-        </PriceContainerStyled>
-        
+        </TotalStyled>
+      </PriceContainerStyled>
     </ProductosContainerStyled>
+  );
+};
 
-    
-  )
-}
-
-export default ProductsCheckout
+export default ProductsCheckout;

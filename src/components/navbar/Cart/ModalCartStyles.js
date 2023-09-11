@@ -114,6 +114,7 @@ export const ProductContainerStyled = styled.div`
     height: 80px;
     border-radius: 16px;
     object-fit: cover;
+    flex: 0 0 auto;
   }
 
   @media (max-width: 768px) {
@@ -138,6 +139,7 @@ export const TextContainerStyled = styled.div`
   /* width: 190px; */
   @media (max-width: 768px) {
     font-size: 12px;
+    flex: 1 1 auto;
   }
 `;
 

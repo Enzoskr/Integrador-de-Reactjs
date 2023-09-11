@@ -36,6 +36,9 @@ export const CardInfoStyled = styled.div`
   flex-direction: column;
   gap: 2px;
   /* width: 450px; */
+  @media (max-width: 768px) {
+    flex: 1 1 auto;
+  }
 `;
 
 export const ProductNameStyles = styled.h3`

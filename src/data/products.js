@@ -9,7 +9,7 @@ export const products = [
   },
   {
     id: 2,
-    title: "zapatillas nike dunk low panda",
+    title: "Zapatillas nike dunk low panda",
     img: "https://d2r9epyceweg5n.cloudfront.net/stores/001/074/983/products/nike-dunk-low-panda-2022-restock-dd1391-100-lead1-1e345e9f48ed85500316766811792046-1024-1024.webp",
     price: 85000,
     desc: "Nike",
@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 4,
-    title: "campera Adidas Originals SST Talle S",
+    title: "Campera Adidas Originals SST Talle S",
     img: "https://assets.adidas.com/images/w_600,f_auto,q_auto/b0ceddccf4b24d49966aab8a00d4d1b0_9366/camperas_Deportiva_Adicolor_Classics_Primeblue_SST_Negro_GF0198_01_laydown.jpg",
     price: 45000,
     desc: "Adidas",
@@ -65,7 +65,7 @@ export const products = [
   },
   {
     id: 9,
-    title: "camperas the north face puffer",
+    title: "Camperas the north face puffer",
     img: "https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2023/4/4/8234470.jpg",
     price: 12000,
     desc: "The north face",
@@ -73,7 +73,7 @@ export const products = [
   },
   {
     id: 10,
-    title: "Pantalon The north face Freedom Insulated Pant",
+    title: "Pantalón The north face Freedom Insulated Pant",
     img: "https://grimoldimediamanager.grimoldi.com/MediaFiles/Grimoldi/2021/7_5/0/105/154/6920908.jpg",
     price: 78000,
     desc: "The north face",
@@ -81,7 +81,7 @@ export const products = [
   },
   {
     id: 11,
-    title: "Pantalon Columbia Silver Ridge Convertible",
+    title: "Pantalón Columbia Silver Ridge Convertible",
     img: "https://www.aquadelta.com.ar/img/articulos/2021/06/pantalon_columbia_desmontable_silver_ridge_hombre_imagen13.jpg",
     price: 67000,
     desc: "Columbia",
@@ -97,7 +97,7 @@ export const products = [
   },
   {
     id: 13,
-    title: "zapatillas vans KNU",
+    title: "Zapatillas vans KNU",
     img: "https://i.ebayimg.com/images/g/X0IAAOSwxjxkAnpy/s-l1600.jpg",
     price: 40000,
     desc: "Vans",
@@ -113,7 +113,7 @@ export const products = [
   },
   {
     id: 15,
-    title: "Pantalon nike x hello kitty",
+    title: "Pantalón nike x hello kitty",
     img: "https://www.nakedcph.com/images/56272/nike-qs-tz-nike-x-hello-kitty-nrg-fleece-pants-university-blue-dr5517-412-1.jpg",
     price: 32000,
     desc: "Nike",
@@ -121,7 +121,7 @@ export const products = [
   },
   {
     id: 16,
-    title: "remeras nike x hello kitty",
+    title: "Remeras nike x hello kitty",
     img: "https://footdistrict.com/media/resize/2000x2500/catalog/product/1/_/1_195868000627/nike-x-hello-kitty-nrg-unisex-t-s-dr5519-412-0.jpg",
     price: 20000,
     desc: "Nike",
@@ -153,7 +153,7 @@ export const products = [
   },
   {
     id: 20,
-    title: "Buza Fear of God Essentials Black Pullover Hoodie",
+    title: "Buzo Fear of God Essentials Black Pullover Hoodie",
     img: "https://essentialhoodie.us/wp-content/uploads/2022/12/Screenshot-8888.png",
     price: 46799,
     desc: "Essentials",
@@ -161,7 +161,7 @@ export const products = [
   },
   {
     id: 21,
-    title: "air max 97 silver bullet ",
+    title: "Air max 97 silver bullet ",
     img: "https://d2r9epyceweg5n.cloudfront.net/stores/001/074/983/products/e9b4419f-3916-4418-95b2-a1bb2a05896c-9c55b321402a46dd2216415791294549-1024-1024.jpeg",
     price: "80000",
     desc: "Nike",
@@ -169,7 +169,7 @@ export const products = [
   },
   {
     id: 22,
-    title: "anorak nike swoosh",
+    title: "Anorak nike swoosh",
     img: "https://http2.mlstatic.com/D_NQ_NP_634259-MLA69667832371_052023-O.webp",
     price: "74000",
     desc: "Nike",
@@ -193,7 +193,7 @@ export const products = [
   },
   {
     id: 25,
-    title: "jacket Lacoste x Golf le Fleur",
+    title: "Jacket Lacoste x Golf le Fleur",
     img: "https://res.cloudinary.com/overkillshop/t_p-610x610/products/35250/bh0465-00-6b3_1.jpg",
     price: "120000",
     desc: "Lacoste x Golf le Fleur",
@@ -201,7 +201,7 @@ export const products = [
   },
   {
     id: 26,
-    title: "zapatillas yeezy 700",
+    title: "Zapatillas yeezy 700",
     img: "https://images.stockx.com/images/adidas-Yeezy-Wave-Runner-700-Solid-Grey-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=jpg&auto=compress&dpr=2&trim=color&updated_at=1628533740&q=75",
     price: 14000,
     desc: "YEEZY",
@@ -209,7 +209,7 @@ export const products = [
   },
   {
     id: 27,
-    title: "remeras Patagonia x Supreme",
+    title: "Remeras Patagonia x Supreme",
     img: "https://media.karousell.com/media/photos/products/2017/07/26/supreme_x_patagonia_tee_1501061239_a8ca4d760",
     price: 51000,
     desc: "Supreme x Patagonia",
@@ -217,7 +217,7 @@ export const products = [
   },
   {
     id: 28,
-    title: "zapatillas yeezy 700 V2 static",
+    title: "Zapatillas yeezy 700 V2 static",
     img: "https://bricksneakers.ro/wp-content/uploads/2021/11/1-87.jpg",
     price: 111000,
     desc: "Adidas Yeezy",

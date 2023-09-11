@@ -18,9 +18,9 @@ const Felicitaciones = () => {
           alt=""
         />
         <ContainerInfoStyled>
-          <h2>Tu pedido fue realizado</h2>
+          {/* <h2>haz click para ver tu order</h2> */}
         </ContainerInfoStyled>
-        <Button onClick={() => navigate("/Ordenes")}>Volver</Button>
+        <Button onClick={() => navigate("/Ordenes")}>Tu Orden</Button>
       </TextStyled>
     </div>
   );

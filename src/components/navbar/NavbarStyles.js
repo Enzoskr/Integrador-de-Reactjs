@@ -175,6 +175,11 @@ export const UserNavStyled = styled.div`
   ::first-letter {
     text-transform: uppercase;
   }
+  @media (max-width: 425px) {
+    span {
+      font-size: 14px;
+    }
+  }
 `;
 export const UserContainerStyled = styled(LinkContainerStyled)`
   height: 15px;
@@ -185,6 +190,9 @@ export const UserContainerStyled = styled(LinkContainerStyled)`
   padding: 1rem;
 
   span {
+  }
+  @media (max-width: 768px) {
+    gap: 2px;
   }
 `;
 

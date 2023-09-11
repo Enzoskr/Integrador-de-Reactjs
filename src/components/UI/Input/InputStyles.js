@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const InputBoxStyled = styled.div`
   display: flex;
@@ -6,8 +6,9 @@ export const InputBoxStyled = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
-  
-
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
 `;
 
 export const InputLabelStyled = styled.label`
@@ -19,28 +20,33 @@ export const InputLabelStyled = styled.label`
   width: 50%;
   color: black;
   font-weight: 700;
+  @media (max-width: 768px) {
+    font-weight: 600;
+  }
 `;
 
 export const InputStyled = styled.input`
   background-color: var(--Gris);
   outline: none;
-  border: ${({ isError }) => (isError ? '1px solid red ' : 'none')};
+  border: ${({ isError }) => (isError ? "1px solid red " : "none")};
   border-radius: 5px;
   height: 30px;
-  padding: 6px 10px ;
+  padding: 6px 10px;
   color: black;
   width: 70%;
   border: 1px solid var(--lines);
--webkit-text-fill-color: black;
+  -webkit-text-fill-color: black;
   ::placeholder {
     opacity: 70%;
   }
-  
 
   :-webkit-autofill,
   :-webkit-autofill:hover,
   :-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px var(--gray-bg) inset;
+  }
+  @media (max-width: 768px) {
+    height: 25px;
   }
 `;
 
