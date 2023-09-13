@@ -14,7 +14,7 @@ import {
 import { AddToCart } from "../../redux/cart/cartSlice";
 import { useDispatch } from "react-redux";
 
-const CardRecommended = ({ id, title, img, price, desc }) => {
+const CardRecommended = ({ id, title, img, price, desc, Size }) => {
   const dispatch = useDispatch(AddToCart);
 
   return (
@@ -23,10 +23,16 @@ const CardRecommended = ({ id, title, img, price, desc }) => {
       <CardText>
         <CardTitle>{title}</CardTitle>
         <InfoCard>{desc}</InfoCard>
+        <InfoCard>
+          <span>Talle:</span>
+          {Size}
+        </InfoCard>
         <CardPrice>{formatPrice(price)}</CardPrice>
       </CardText>
       <Button
-        onClick={() => dispatch(AddToCart({ id, img, title, desc, price }))}
+        onClick={() =>
+          dispatch(AddToCart({ id, img, title, desc, price, Size }))
+        }
       >
         Añadir
       </Button>

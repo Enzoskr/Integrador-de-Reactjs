@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const CardsContainer = styled.div`
   display: grid;
-  gap: 20px;
-  padding: 1rem;
+  gap: 6px;
+  padding: 6px 4px;
   grid-template-columns: ${({ gridlength }) => `repeat(${gridlength}, 1fr)`};
   overflow: scroll;
+  width: 100%;
 
   &::-webkit-scrollbar {
     height: 6px;
-    width: 5px;
+    width: 10px;
     background: transparent;
   }
 
@@ -39,7 +40,7 @@ export const Card = styled.div`
   border-radius: 1rem;
   background-color: antiquewhite;
   transition: all 0.3s ease-in-out;
-  width: 420px;
+  width: 400px;
   height: 100px;
   flex: 0 0 auto;
 
@@ -61,7 +62,7 @@ export const CardImg = styled.img`
 `;
 export const CardTitle = styled.h3`
   margin: 0;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.05rem;
@@ -84,16 +85,22 @@ export const CardText = styled.div`
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  flex-direction: column;
 `;
 
 export const CardPrice = styled.span`
   font-weight: 700;
   font-size: 16px;
-  color: var(--colorLogo1);
   text-shadow: 1px 1px 1px #fff;
+  color: var(--colorLogo1);
 `;
-export const InfoCard = styled.p`
+export const InfoCard = styled.div`
   margin: 0;
   margin-bottom: 5px;
   font-weight: 700;
+`;
+
+export const sizeSpan = styled.span`
+  font-weight: 500;
+  font-size: 16px;
 `;

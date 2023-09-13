@@ -91,3 +91,14 @@ export const ContainerInfo = styled.div`
     }
   }
 `;
+export const SizeAndBrand = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  a {
+    font-size: 12px;
+    color: var(--colorLogo2);
+  }
+`;

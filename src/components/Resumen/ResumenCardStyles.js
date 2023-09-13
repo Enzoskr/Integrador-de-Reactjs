@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ProductStyled = styled.div`
+  border-top: 2px solid var(--lines);
   display: flex;
   justify-content: space-between;
   background: var(--gray-bg);
@@ -10,6 +11,9 @@ export const ProductStyled = styled.div`
   max-width: 620px;
   img {
     width: 100px;
+  }
+  P {
+    color: black;
   }
   @media (max-width: 768px) {
     width: 80%;

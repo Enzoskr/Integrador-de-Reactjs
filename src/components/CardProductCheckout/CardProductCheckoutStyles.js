@@ -12,6 +12,7 @@ export const CardContainerStyles = styled.div`
   border: 2px solid var(--lines);
   padding: 10px;
   height: 85px;
+  flex: 1 1 auto;
 
   & img {
     width: 80px;
@@ -35,7 +36,7 @@ export const CardInfoStyled = styled.div`
   overflow: hidden;
   flex-direction: column;
   gap: 2px;
-  /* width: 450px; */
+  width: 450px;
   @media (max-width: 768px) {
     flex: 1 1 auto;
   }

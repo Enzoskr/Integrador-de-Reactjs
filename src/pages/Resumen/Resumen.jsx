@@ -12,7 +12,6 @@ import {
   ResumenContainerInfoStyled,
   ResumenContainerStyled,
   ResumenTitleStyled,
-  LinkStyled,
 } from "./ResumenStyles";
 import { useDispatch, useSelector } from "react-redux";
 import { getOrders } from "../../axios/axios-orders";

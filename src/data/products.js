@@ -6,14 +6,16 @@ export const products = [
     price: 10009,
     desc: "Adidas",
     category: "Remeras",
+    Size: "L",
   },
   {
     id: 2,
     title: "Zapatillas nike dunk low panda",
-    img: "https://d2r9epyceweg5n.cloudfront.net/stores/001/074/983/products/nike-dunk-low-panda-2022-restock-dd1391-100-lead1-1e345e9f48ed85500316766811792046-1024-1024.webp",
+    img: "https://acdn.mitiendanube.com/stores/001/140/641/products/a014af18-eda6-47a4-af8d-1b3a6f21a1c4-368183273466567a0216935140292881-640-0.png",
     price: 85000,
     desc: "Nike",
     category: "Zapatillas",
+    Size: "9us",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const products = [
     price: 60000,
     desc: "Adidas Originals",
     category: "Hoodie",
+    Size: "XS",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const products = [
     price: 45000,
     desc: "Adidas",
     category: "Camperas",
+    Size: "M",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const products = [
     price: 20000,
     desc: "Nike",
     category: "Accesorios",
+    Size: "Ú",
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const products = [
     price: 40000,
     desc: "Adidas Originals",
     category: "Pantalones",
+    Size: "XL",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const products = [
     price: 32000,
     desc: "Crocs",
     category: "Zapatillas",
+    Size: "8.5us",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const products = [
     price: 65000,
     desc: "Nike",
     category: "Camperas",
+    Size: "M",
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const products = [
     price: 12000,
     desc: "The north face",
     category: "Camperas",
+    Size: "XL",
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const products = [
     price: 78000,
     desc: "The north face",
     category: "Pantalon",
+    Size: "LG",
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const products = [
     price: 67000,
     desc: "Columbia",
     category: "Pantalon",
+    Size: "",
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const products = [
     price: 18000,
     desc: "Nike",
     category: "Remeras",
+    Size: "M",
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const products = [
     price: 40000,
     desc: "Vans",
     category: "Zapatillas",
+    Size: "10us",
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const products = [
     price: 43000,
     desc: "Nike",
     category: "Hoodie",
+    Size: "M",
   },
   {
     id: 15,
@@ -118,14 +132,16 @@ export const products = [
     price: 32000,
     desc: "Nike",
     category: "Pantalon",
+    Size: "M",
   },
   {
     id: 16,
     title: "Remeras nike x hello kitty",
-    img: "https://footdistrict.com/media/resize/2000x2500/catalog/product/1/_/1_195868000627/nike-x-hello-kitty-nrg-unisex-t-s-dr5519-412-0.jpg",
+    img: "https://footdistrict.com/media/reSize/2000x2500/catalog/product/1/_/1_195868000627/nike-x-hello-kitty-nrg-unisex-t-s-dr5519-412-0.jpg",
     price: 20000,
     desc: "Nike",
     category: "Remeras",
+    Size: "L",
   },
   {
     id: 17,
@@ -134,14 +150,16 @@ export const products = [
     price: 98000,
     desc: "Nike Air Jordan",
     category: "Camperas",
+    Size: "L",
   },
   {
     id: 18,
-    title: "Camisa Oversize Aqua",
+    title: "Camisa OverSize Aqua",
     img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/379/691/products/camisa-aqua-frente1-7b72f751a968dc277316726724283422-480-0.webp",
     price: 7000,
     desc: "Estanislao",
     category: "Camisas",
+    Size: "XL",
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ export const products = [
     price: 48799,
     desc: "Essentials",
     category: "Hoodie",
+    Size: "L",
   },
   {
     id: 20,
@@ -158,6 +177,7 @@ export const products = [
     price: 46799,
     desc: "Essentials",
     category: "Hoodie",
+    Size: "",
   },
   {
     id: 21,
@@ -166,6 +186,7 @@ export const products = [
     price: "80000",
     desc: "Nike",
     category: "Zapatillas",
+    Size: "9.5us",
   },
   {
     id: 22,
@@ -174,6 +195,7 @@ export const products = [
     price: "74000",
     desc: "Nike",
     category: "Hoodie",
+    Size: "L",
   },
   {
     id: 23,
@@ -182,6 +204,7 @@ export const products = [
     price: 49999,
     desc: "Levis",
     category: "Hoodie",
+    Size: "XL",
   },
   {
     id: 24,
@@ -190,6 +213,7 @@ export const products = [
     price: 29900,
     desc: "Lacoste",
     category: "Accesorios",
+    Size: "Ú",
   },
   {
     id: 25,
@@ -198,6 +222,7 @@ export const products = [
     price: "120000",
     desc: "Lacoste x Golf le Fleur",
     category: "Camperas",
+    Size: "XL",
   },
   {
     id: 26,
@@ -206,6 +231,7 @@ export const products = [
     price: 14000,
     desc: "YEEZY",
     category: "Zapatillas",
+    Size: "6us",
   },
   {
     id: 27,
@@ -214,6 +240,7 @@ export const products = [
     price: 51000,
     desc: "Supreme x Patagonia",
     category: "Remeras",
+    Size: "L",
   },
   {
     id: 28,
@@ -222,6 +249,7 @@ export const products = [
     price: 111000,
     desc: "Adidas Yeezy",
     category: "Zapatillas",
+    Size: "8.5us",
   },
 ];
 
