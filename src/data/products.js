@@ -96,7 +96,7 @@ export const products = [
     price: 67000,
     desc: "Columbia",
     category: "Pantalon",
-    Size: "",
+    Size: "L",
   },
   {
     id: 12,
@@ -137,7 +137,7 @@ export const products = [
   {
     id: 16,
     title: "Remeras nike x hello kitty",
-    img: "https://footdistrict.com/media/reSize/2000x2500/catalog/product/1/_/1_195868000627/nike-x-hello-kitty-nrg-unisex-t-s-dr5519-412-0.jpg",
+    img: "https://acdn.mitiendanube.com/stores/194/524/products/141-47f1cf2dc2a9ae524b16880687712952-1024-1024.jpg",
     price: 20000,
     desc: "Nike",
     category: "Remeras",
@@ -177,7 +177,7 @@ export const products = [
     price: 46799,
     desc: "Essentials",
     category: "Hoodie",
-    Size: "",
+    Size: "S",
   },
   {
     id: 21,

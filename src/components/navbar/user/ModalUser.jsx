@@ -22,6 +22,7 @@ const ModalUser = () => {
     <AnimatePresence>
       {!hiddenMenu && (
         <ModalContainerStyled
+          onClick={() => dispatch(toggleMenuHidden())}
           initial={{ translateX: 900 }}
           animate={{ translateX: 0 }}
           exit={{ translateX: 900 }}

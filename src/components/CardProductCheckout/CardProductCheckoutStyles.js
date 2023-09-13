@@ -12,7 +12,6 @@ export const CardContainerStyles = styled.div`
   border: 2px solid var(--lines);
   padding: 10px;
   height: 85px;
-  flex: 1 1 auto;
 
   & img {
     width: 80px;

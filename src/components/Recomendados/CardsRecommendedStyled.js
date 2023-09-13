@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const CardsContainer = styled.div`
   display: grid;
   gap: 6px;
-  padding: 6px 4px;
+  padding: 1rem;
   grid-template-columns: ${({ gridlength }) => `repeat(${gridlength}, 1fr)`};
   overflow: scroll;
-  width: 100%;
 
   &::-webkit-scrollbar {
     height: 6px;
-    width: 10px;
+    width: 5px;
     background: transparent;
   }
 
@@ -35,17 +34,17 @@ export const Card = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding: 0 20px;
+  gap: 10px;
+  padding: 0 10px;
   border-radius: 1rem;
   background-color: antiquewhite;
   transition: all 0.3s ease-in-out;
-  width: 400px;
+  width: 410px;
   height: 100px;
   flex: 0 0 auto;
 
   @media (max-width: 768px) {
-    width: 300px;
+    width: 340px;
     font-size: 10px;
     height: 100px;
     padding: 0px 6px;
