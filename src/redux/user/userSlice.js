@@ -1,5 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
-
+import { createSlice } from "@reduxjs/toolkit";
 
 const INITIAL_STATE = {
   currentUser: null,
@@ -7,7 +6,7 @@ const INITIAL_STATE = {
 };
 
 const userSlice = createSlice({
-  name: 'user',
+  name: "user",
   initialState: INITIAL_STATE,
   reducers: {
     setCurrentUser: (state, action) => {
@@ -22,12 +21,19 @@ const userSlice = createSlice({
         hiddenMenu: !state.hiddenMenu,
       };
     },
+    setVerified: (state, action) => {
+      return {
+        ...state,
+        currentUser: {
+          ...state.currentUser,
+          verified: action.payload,
+        },
+      };
+    },
   },
 });
 
-export const { 
-    setCurrentUser,
-    toggleMenuHidden
-} = userSlice.actions;
+export const { setCurrentUser, toggleMenuHidden, setVerified } =
+  userSlice.actions;
 
 export default userSlice.reducer;

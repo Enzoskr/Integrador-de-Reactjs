@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const FooterContainerStyled = styled.footer`
@@ -8,6 +9,7 @@ export const FooterContainerStyled = styled.footer`
   margin-top: 40px;
   border-top: 3px solid var(--lines);
   padding: 0 40px;
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -50,4 +52,13 @@ export const FooterLiStyled = styled.li`
   font-weight: 400;
   line-height: 2rem;
   cursor: pointer;
+`;
+export const ISSUEListStyled = styled(motion.li)`
+  background-color: var(--lines);
+  border: 1px solid var(--lines);
+  text-align: center;
+  cursor: pointer;
+  span {
+    display: none;
+  }
 `;

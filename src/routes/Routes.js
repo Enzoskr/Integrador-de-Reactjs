@@ -8,6 +8,8 @@ import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
 import Orders from "../pages/Ordenes/Ordenes";
 import Resumen from "../pages/Resumen/Resumen";
 import Felicitaciones from "../pages/Felicitaciones/Felicitaciones";
+import Issues from "../pages/Issues/Issues";
+import Validate from "../pages/Validate/Validate";
 
 function Routes() {
   return (
@@ -18,6 +20,8 @@ function Routes() {
       <Route path="/Ordenes" element={<Orders />} />
       <Route path="/Felicitaciones" element={<Felicitaciones />} />
       <Route path="/resumen/:orderId" element={<Resumen />} />
+      <Route path="/issues" element={<Issues />} />
+      <Route path="/validate" element={<Validate />} />
 
       <Route
         path="/Checkout"

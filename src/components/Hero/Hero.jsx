@@ -14,8 +14,11 @@ import {
 } from "./HeroStyles";
 
 import { selectCategory } from "../../redux/categories/categoriesSlice";
+import { useNavigate } from "react-router-dom";
 
 const Hero = ({ doScroll }) => {
+  const currentUser = useSelector((state) => state.user.currentUser);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const [value, setValue] = useState("");
