@@ -23,5 +23,4 @@ export const issueInitialValues = {
   title: "",
   description: "",
   priority: "",
-  category: "",
 };

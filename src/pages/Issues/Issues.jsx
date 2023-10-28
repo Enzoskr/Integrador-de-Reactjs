@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Formik } from "formik";
+import { Formik, Form } from "formik";
 import { useNavigate } from "react-router-dom";
 
 import LoginInput from "../../components/UI/LoginInput/LoginInput";
@@ -8,7 +8,7 @@ import Submit from "../../components/UI/Submit/Submit";
 import {
   // IssuesStyles,
   IssueContainerStyled,
-  Form,
+  // Form,
   // LoginEmailStyled,
   // Formik,
 } from "./IssuesStyles";
@@ -46,6 +46,7 @@ const Issues = () => {
             currentUser
           );
           navigate("/");
+          alert("Issue creada");
         }}
       >
         <Form>

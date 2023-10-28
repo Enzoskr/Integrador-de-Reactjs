@@ -38,6 +38,5 @@ export const validateValidationSchema = Yup.object({
 export const issuevalidationSchema = Yup.object({
   title: Yup.string().required("Campo necesario"),
   description: Yup.string().required("Campo necesario"),
-  priority: Yup.string().required("Campo necesario"),
-  category: Yup.string().required("Campo necesario"),
+  priority: Yup.number().required("Campo necesario"),
 });
