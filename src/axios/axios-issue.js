@@ -9,7 +9,7 @@ export const createIssue = async (
 ) => {
   try {
     const response = await axios.post(
-      `${BASE_URL}/issues`,
+      `${BASE_URL}issues`,
       {
         title,
         description,
