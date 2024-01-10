@@ -3,14 +3,9 @@ import { Formik, Form } from "formik";
 import { useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
-import {
-  LoginInputStyled,
-  ValidateContainerStyled,
-  ValidateInputStyled,
-  ValidateTitleStyled,
-} from "./ValidateStyles";
+import { ValidateContainerStyled, ValidateTitleStyled } from "./ValidateStyles";
 import { verifyUser } from "../../axios/axios-user";
-import { setCurrentUser, setVerified } from "../../redux/user/userSlice";
+import { setVerified } from "../../redux/user/userSlice";
 import { validateInitialValues } from "../../Formik/initialValues";
 import { validateValidationSchema } from "../../Formik/validationSchema";
 import LoginInput from "../../components/UI/LoginInput/LoginInput";
@@ -32,7 +27,7 @@ const Validate = () => {
   return (
     <ValidateContainerStyled>
       <span>
-        te va a llegar un correo, revisalo. esto es fundamental para tu
+        Te va a llegar un correo, revisalo. esto es fundamental para tu
         seguridad e integridad de tu cuenta
       </span>
       <ValidateTitleStyled>Validar cuenta</ValidateTitleStyled>

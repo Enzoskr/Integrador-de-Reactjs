@@ -15,6 +15,11 @@ export const ValidateContainerStyled = styled.div`
   @media (max-width: 768px) {
     width: 90%;
   }
+  span {
+    opacity: 0.7;
+    text-decoration: dashed;
+    margin-top: 12px;
+  }
 `;
 export const ValidateTitleStyled = styled.h1`
   font-size: 24px;
