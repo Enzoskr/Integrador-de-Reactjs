@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     title: 'Camiseta Argentina 2022 "CAMPEONA DEL MUNDO"',
-    img: "https://www.thefutbolstore.com.ar/uploads/v2/product/hi/ARG2022_A.jpg",
+    img: "https://assets.solesense.com/en/images/products/500/adidas-argentina-2022-23-authentic-messi-home-jersey-white-hf2157_1.jpg",
     price: 10009,
     desc: "Adidas",
     category: "Remeras",
@@ -47,7 +47,7 @@ export const products = [
   {
     id: 6,
     title: "Pantalon Adidas Adibreak",
-    img: "https://s3.sa-east-1.amazonaws.com/www.vaypol.com.ar/variants/8qwy8679vo1f9304rxtj722o1pnq/c77c2a06864ac9aca38dc5bd9371de015471edcdbf322dfb14411689bf968ae5",
+    img: "https://dcdn-us.mitiendanube.com/stores/003/814/189/products/5c2574c6-4a47-4786-89e4-21e4558f4a51-b62798e0d1e1bcc5c517272242244377-1024-1024.webp",
     price: 40000,
     desc: "Adidas Originals",
     category: "Pantalones",
@@ -119,7 +119,7 @@ export const products = [
   {
     id: 14,
     title: "Hoodie nike x hello kitty",
-    img: "https://media.endclothing.com/media/catalog/product/0/7/07-06-2022_JC_DR5515-412_m1_1.jpg",
+    img: "https://www.digitalsport.com.ar/files/products/63781b0fa221d-609878-1200x1200.jpg",
     price: 43000,
     desc: "Nike",
     category: "Hoodie",
@@ -128,7 +128,7 @@ export const products = [
   {
     id: 15,
     title: "Pantalón nike x hello kitty",
-    img: "https://www.nakedcph.com/images/56272/nike-qs-tz-nike-x-hello-kitty-nrg-fleece-pants-university-blue-dr5517-412-1.jpg",
+    img: "https://static.nike.com/a/images/w_1280,q_auto,f_auto/444333ed-58ff-4fb8-8963-968dd4af8d72/fecha-de-lanzamiento-de-la-colecci%C3%B3n-de-ropa-nike-x-hello-kitty%C2%AE.jpg",
     price: 32000,
     desc: "Nike",
     category: "Pantalon",
@@ -209,7 +209,7 @@ export const products = [
   {
     id: 24,
     title: "Bolsito Lacoste x Minecraft",
-    img: "https://d3uvb2lhumlp.cloudfront.net/pub/media/catalog/product/n/h/nh3746mk_j94_24_1.jpg",
+    img: "https://imagena1.lacoste.com/dw/image/v2/AAUP_PRD/on/demandware.static/-/Sites-master/default/dw0404cc2e/NH3746MK_J94_24.jpg",
     price: 29900,
     desc: "Lacoste",
     category: "Accesorios",
@@ -245,7 +245,7 @@ export const products = [
   {
     id: 28,
     title: "Zapatillas yeezy 700 V2 static",
-    img: "https://bricksneakers.ro/wp-content/uploads/2021/11/1-87.jpg",
+    img: "https://cdn-images.farfetch-contents.com/13/67/89/19/13678919_23445097_1000.jpg",
     price: 111000,
     desc: "Adidas Yeezy",
     category: "Zapatillas",

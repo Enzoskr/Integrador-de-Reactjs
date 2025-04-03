@@ -6,6 +6,7 @@ export const StyledButton = styled(motion.button)`
   background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
   background-color: #ffc477;
   border-radius: ${({ radius }) => `${radius}px`};
+  margin-bottom: ${({ mb }) => `${mb}px`};
   border: 1px solid #eeb44f;
   display: inline-block;
   cursor: pointer;

@@ -1,15 +1,23 @@
 import styled from "styled-components";
 
 export const CardsContainer = styled.div`
-  display: grid;
-  gap: 6px;
+  display: flex;
+  gap: 10px;
   padding: 1rem;
-  grid-template-columns: ${({ gridlength }) => `repeat(${gridlength}, 1fr)`};
-  overflow: scroll;
+  overflow-x: auto;
+  white-space: nowrap; /* Evita que los elementos bajen de línea */
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%;
+  margin: 0 auto; /* Centrar en la pantalla */
 
   &::-webkit-scrollbar {
     height: 6px;
-    width: 5px;
     background: transparent;
   }
 
@@ -18,8 +26,9 @@ export const CardsContainer = styled.div`
     border-radius: 6px;
     opacity: 50%;
   }
-  &::-webkit-scrollbar:vertical {
-    display: none;
+
+  &:active {
+    cursor: grabbing;
   }
   @media (max-width: 768px) {
     padding: 6px;
@@ -59,18 +68,19 @@ export const CardImg = styled.img`
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 `;
+
 export const CardTitle = styled.h3`
   margin: 0;
-  /* margin-bottom: 5px; */
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.05rem;
-
   width: 200px;
+
   :hover {
     white-space: normal;
     text-overflow: initial;
   }
+
   @media (max-width: 425px) {
     letter-spacing: normal;
   }
@@ -93,6 +103,7 @@ export const CardPrice = styled.span`
   text-shadow: 1px 1px 1px #fff;
   color: var(--colorLogo1);
 `;
+
 export const InfoCard = styled.div`
   margin: 0;
   margin-bottom: 5px;

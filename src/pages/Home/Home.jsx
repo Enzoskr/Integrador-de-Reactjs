@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Hero from "../../components/Hero/Hero";
 
 import Categorias from "../../components/Categorias/Categorias";
@@ -11,19 +11,19 @@ import {
   ProductosWrapper,
   RecommendedWrapper,
 } from "./HomeStyles";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+// import { useSelector } from "react-redux";
+// import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
-  const currentUser = useSelector((state) => state.user.currentUser);
+  //const navigate = useNavigate();
+  //const currentUser = useSelector((state) => state.user.currentUser);
 
   const productsRef = useRef();
-  useEffect(() => {
-    if (!currentUser) {
-      navigate("/login");
-    }
-  }, [currentUser, navigate]);
+  // useEffect(() => {
+  //   if (!currentUser) {
+  //     navigate("/login");
+  //   }
+  // }, [currentUser, navigate]);
 
   const doScroll = () => {
     window.scrollTo(
